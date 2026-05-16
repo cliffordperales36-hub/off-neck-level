@@ -3,244 +3,130 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>OFF NECK LEVEL | Skunk Lord Official</title>
+<title>OFF NECK LEVEL | Skunk Lord</title>
 <script src="https://cdn.tailwindcss.com"></script>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
 <style>
-@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&amp;family=Impact&amp;display=swap');
 body { background:#0a0a0a; color:#fff; font-family: Inter, system-ui, sans-serif; }
 .graffiti { font-family: Impact, 'Arial Black', sans-serif; letter-spacing: -2px; }
-.nav-link { transition: all .2s; }
-.nav-link:hover { color: #ef4444; }
 .card-hover { transition: transform .4s cubic-bezier(0.34,1.56,.64,1), box-shadow .3s; }
-.card-hover:hover { transform: translateY(-12px) scale(1.01); box-shadow: 0 30px 70px -15px rgb(0 0 0 / 0.5); }
-.skunk-red { color: #c8102e; }
+.card-hover:hover { transform: translateY(-12px) scale(1.01); }
 </style>
 </head>
-<body>
+<body class="bg-[#0a0a0a]">
+
 <!-- Navbar -->
-<nav class="bg-black/95 backdrop-blur-lg border-b border-zinc-800 sticky top-0 z-50">
-  <div class="max-w-7xl mx-auto px-6 flex items-center justify-between h-20">
+<nav class="bg-black border-b border-zinc-800 sticky top-0 z-50">
+  <div class="max-w-7xl mx-auto px-6 flex justify-between items-center h-20">
     <div class="flex items-center gap-x-4">
-      <div class="w-9 h-9 bg-red-600 rounded-2xl flex items-center justify-center"><span class="font-black text-2xl tracking-tighter">SK</span></div>
-      <div>
-        <span class="font-black text-3xl tracking-[-2.5px]">OFF NECK LEVEL</span>
-        <span class="text-[10px] block -mt-1.5 text-zinc-500">BY SKUNK LORD</span>
-      </div>
+      <div class="w-9 h-9 bg-red-600 rounded-2xl flex items-center justify-center"><span class="font-black text-2xl">SK</span></div>
+      <div class="font-black text-3xl tracking-[-2px]">OFF NECK LEVEL <span class="text-xs text-zinc-500 block -mt-1">BY SKUNK LORD</span></div>
     </div>
-    <div class="hidden md:flex items-center gap-x-9 text-sm uppercase tracking-[2px]">
-      <a href="#home" class="nav-link">Home</a>
-      <a href="#merch" class="nav-link">Merch</a>
-      <a href="#music" class="nav-link">Music</a>
-      <a href="#art" class="nav-link">Art</a>
-    </div>
-    <div class="flex items-center gap-x-3">
-      <a href="https://x.com/SkunkLord" target="_blank" class="px-5 py-2 text-xs font-bold border border-white/30 hover:bg-white hover:text-black rounded-3xl transition flex items-center gap-x-2">
-        <i class="fab fa-x-twitter"></i> <span class="hidden sm:inline">FOLLOW ON X</span>
-      </a>
-      <button onclick="document.getElementById('merch').scrollIntoView({behavior:'smooth'})" class="bg-red-600 hover:bg-red-700 px-6 py-2.5 text-xs font-extrabold tracking-widest rounded-3xl flex items-center gap-x-2">
-        <i class="fas fa-shopping-bag"></i> <span>SHOP</span>
-      </button>
+    <div class="flex items-center gap-x-4 text-sm">
+      <a href="#merch" class="hover:text-red-500">MERCH</a>
+      <a href="#music" class="hover:text-red-500">MUSIC</a>
+      <button onclick="document.getElementById('merch').scrollIntoView({behavior:'smooth'})" class="bg-red-600 px-5 py-2 text-xs font-bold rounded-3xl">SHOP NOW</button>
     </div>
   </div>
 </nav>
 
-<!-- Hero / Home -->
-<section id="home" class="min-h-[92vh] flex items-center justify-center relative bg-zinc-950 overflow-hidden">
-  <div class="absolute inset-0 bg-[radial-gradient(#1f1f1f_1px,transparent_1px)] bg-[length:3px_3px]"></div>
-  <div class="relative z-10 max-w-5xl px-6 text-center">
-    <div class="inline px-4 py-1.5 bg-red-600/90 text-xs tracking-[4px] rounded-full mb-6">EST. STREETS • 2025</div>
-    <h1 class="text-[92px] md:text-[130px] leading-none font-black tracking-[-8px] graffiti">OFF NECK<br>LEVEL</h1>
-    <p class="max-w-lg mx-auto mt-4 text-2xl text-zinc-400">The official streetwear of Skunk Lord.<br>Above the noise. Beyond the neck.</p>
+<!-- Hero -->
+<section class="min-h-[90vh] flex items-center justify-center bg-zinc-950 relative">
+  <div class="text-center px-6">
+    <div class="text-red-600 text-xs tracking-[4px] mb-4">OFFICIAL STREETWEAR</div>
+    <h1 class="text-[100px] md:text-[130px] font-black tracking-[-7px] leading-none graffiti">OFF NECK<br>LEVEL</h1>
+    <p class="text-2xl text-zinc-400 mt-2">Wear the crown. Rule the streets.</p>
+    <div class="mt-8 flex justify-center gap-4">
+      <button onclick="document.getElementById('merch').scrollIntoView({behavior:'smooth'})" class="px-9 py-4 bg-white text-black font-bold rounded-3xl text-sm tracking-widest hover:bg-red-600 hover:text-white transition">SHOP THE COLLECTION</button>
+      <a href="https://x.com/SkunkLord" class="px-8 py-4 border border-white/40 rounded-3xl text-sm flex items-center gap-x-2 hover:bg-white hover:text-black transition"><i class="fab fa-x-twitter"></i> FOLLOW ON X</a>
+    </div>
+  </div>
+</section>
+
+<!-- Merch -->
+<section id="merch" class="max-w-7xl mx-auto px-6 py-16">
+  <div class="flex justify-between mb-8">
+    <h2 class="text-6xl font-black tracking-tight">THE COLLECTION</h2>
+  </div>
+
+  <div class="flex gap-2 mb-8 flex-wrap" id="filters">
+    <button onclick="filterMerch('all')" class="px-5 py-2 text-xs rounded-3xl bg-red-600 text-white" data-filter="all">ALL</button>
+    <button onclick="filterMerch('classic')" class="px-5 py-2 text-xs rounded-3xl border border-white/30" data-filter="classic">CLASSIC</button>
+    <button onclick="filterMerch('luxury')" class="px-5 py-2 text-xs rounded-3xl border border-white/30" data-filter="luxury">LUXURY</button>
+    <button onclick="filterMerch('animal')" class="px-5 py-2 text-xs rounded-3xl border border-white/30" data-filter="animal">ANIMAL</button>
+  </div>
+
+  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-6" id="grid">
     
-    <div class="mt-10 flex flex-col sm:flex-row gap-4 justify-center">
-      <button onclick="document.getElementById('merch').scrollIntoView({behavior:'smooth'})" class="px-10 py-4 bg-white text-black font-bold text-sm tracking-widest rounded-3xl flex items-center justify-center gap-x-3 hover:bg-red-600 hover:text-white transition">
-        SHOP THE DROP <i class="fas fa-arrow-right"></i>
-      </button>
-      <a href="https://x.com/SkunkLord" target="_blank" class="px-8 py-4 border border-white/60 hover:bg-white hover:text-black font-bold text-sm tracking-widest rounded-3xl flex items-center justify-center gap-x-3 transition">
-        <i class="fab fa-x-twitter"></i> WATCH THE MOVEMENT
-      </a>
-    </div>
-  </div>
-  <div class="absolute bottom-8 text-xs tracking-[3px] flex flex-col items-center opacity-60">
-    SCROLL TO BEGIN
-    <i class="fas fa-chevron-down mt-1.5 animate-bounce"></i>
-  </div>
-</section>
-
-<!-- Trust -->
-<div class="bg-black py-4 border-b border-zinc-900">
-  <div class="max-w-6xl mx-auto px-6 flex flex-wrap justify-center gap-x-10 gap-y-2 text-xs uppercase tracking-widest text-zinc-400">
-    <div class="flex items-center gap-x-2"><i class="fas fa-check-circle text-emerald-500"></i> HEAVYWEIGHT FRENCH TERRY</div>
-    <div class="flex items-center gap-x-2"><i class="fas fa-check-circle text-emerald-500"></i> LIMITED DROPS ONLY</div>
-    <div class="flex items-center gap-x-2"><i class="fas fa-check-circle text-emerald-500"></i> X SUBSCRIBER PERKS</div>
-  </div>
-</div>
-
-<!-- Merch Section -->
-<section id="merch" class="max-w-7xl mx-auto px-6 pt-16 pb-20">
-  <div class="flex justify-between items-end mb-8">
-    <div>
-      <span class="text-red-600 text-xs tracking-[3px] font-bold">OFFICIAL ARCHIVE</span>
-      <h2 class="text-6xl font-black tracking-[-2px]">MERCH</h2>
-    </div>
-    <a href="#" class="text-xs px-5 py-2 border border-white/30 rounded-3xl hover:bg-white hover:text-black transition hidden md:block">VIEW ALL DROPS →</a>
-  </div>
-
-  <!-- Filters -->
-  <div class="flex flex-wrap gap-2 mb-8" id="filters">
-    <button onclick="filterCategory('all')" class="active px-6 py-2 text-xs border border-white/30 rounded-3xl tracking-widest bg-red-600 text-white" data-filter="all">ALL</button>
-    <button onclick="filterCategory('classic')" class="px-6 py-2 text-xs border border-white/30 rounded-3xl tracking-widest" data-filter="classic">CLASSIC</button>
-    <button onclick="filterCategory('luxury')" class="px-6 py-2 text-xs border border-white/30 rounded-3xl tracking-widest" data-filter="luxury">LUXURY</button>
-    <button onclick="filterCategory('graffiti')" class="px-6 py-2 text-xs border border-white/30 rounded-3xl tracking-widest" data-filter="graffiti">GRAFFITI</button>
-    <button onclick="filterCategory('animal')" class="px-6 py-2 text-xs border border-white/30 rounded-3xl tracking-widest" data-filter="animal">ANIMAL</button>
-  </div>
-
-  <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-6" id="merch-grid">
-    <!-- Product 1: Pack Leader -->
-    <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 card-hover" data-category="limited classic">
-      <div class="relative">
-        <img src="https://picsum.photos/id/1011/600/700" class="w-full aspect-[4/3.2] object-cover group-hover:scale-105 transition-transform" alt="Pack Leader Navy Tracksuit">
-        <div class="absolute top-4 right-4 bg-black/80 text-xs px-3 py-1 rounded-2xl font-bold tracking-wider">LIMITED</div>
-      </div>
+    <!-- PACK LEADER - Replace this image -->
+    <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="limited classic">
+      <img src="https://picsum.photos/id/1011/600/650" class="w-full" alt="Pack Leader - Main image. REPLACE WITH: images/pack-leader.jpg">
       <div class="p-5">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-start">
           <div>
-            <div class="font-bold text-xl">PACK LEADER</div>
-            <div class="text-xs text-zinc-400">Navy Heavyweight</div>
+            <div class="font-bold text-2xl">PACK LEADER</div>
+            <div class="text-xs text-zinc-400">Navy Heavyweight • Limited</div>
           </div>
-          <div class="text-right"><span class="text-3xl font-black">$148</span></div>
+          <div class="text-right text-3xl font-black">$148</div>
         </div>
-        <div class="mt-4 flex gap-2">
-          <button onclick="addToCart(this, 'Pack Leader Navy', 148)" class="flex-1 py-3.5 text-xs font-extrabold tracking-widest bg-white text-black rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button>
-        </div>
+        <button onclick="addToCart(this,'Pack Leader Navy',148)" class="mt-5 w-full py-3.5 bg-white text-black text-xs font-extrabold tracking-widest rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button>
       </div>
     </div>
 
-    <!-- Product 2: Skunk Queens -->
-    <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 card-hover" data-category="limited luxury">
-      <div class="relative">
-        <img src="https://picsum.photos/id/1005/600/700" class="w-full aspect-[4/3.2] object-cover group-hover:scale-105 transition-transform" alt="Skunk Queens Crew">
-        <div class="absolute top-4 right-4 bg-red-600 text-xs px-3 py-1 rounded-2xl font-bold tracking-wider">CREW</div>
-      </div>
+    <!-- SKUNK QUEENS - Replace this image -->
+    <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="limited luxury">
+      <img src="https://picsum.photos/id/1005/600/650" class="w-full" alt="Skunk Queens Crew. REPLACE WITH: images/skunk-queens.jpg">
       <div class="p-5">
-        <div class="flex justify-between">
+        <div class="flex justify-between items-start">
           <div>
-            <div class="font-bold text-xl">SKUNK QUEENS</div>
-            <div class="text-xs text-zinc-400">Multi-Colorway</div>
+            <div class="font-bold text-2xl">SKUNK QUEENS</div>
+            <div class="text-xs text-zinc-400">Multi Colorway Set</div>
           </div>
-          <div class="text-right"><span class="text-3xl font-black">$165</span></div>
+          <div class="text-right text-3xl font-black">$165</div>
         </div>
-        <button onclick="addToCart(this, 'Skunk Queens Set', 165)" class="mt-4 w-full py-3.5 text-xs font-extrabold tracking-widest bg-white text-black rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button>
+        <button onclick="addToCart(this,'Skunk Queens Set',165)" class="mt-5 w-full py-3.5 bg-white text-black text-xs font-extrabold tracking-widest rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button>
       </div>
     </div>
 
-    <!-- Add more cards as needed -->
-    <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 card-hover" data-category="classic">
-      <div class="relative"><img src="https://picsum.photos/id/160/600/700" class="w-full aspect-[4/3.2] object-cover group-hover:scale-105 transition-transform" alt="Classic Navy"><div class="absolute top-4 right-4 text-xs px-3 py-1 bg-black/70 rounded-2xl">CLASSIC</div></div>
-      <div class="p-5"><div class="font-bold text-xl">CLASSIC NAVY</div><div class="text-xs text-zinc-400">Signature Stripe</div><div class="mt-1 text-3xl font-black">$128</div><button onclick="addToCart(this,'Classic Navy',128)" class="mt-4 w-full py-3.5 text-xs font-extrabold tracking-widest bg-white text-black rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button></div>
-    </div>
-
-    <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 card-hover" data-category="luxury">
-      <div class="relative"><img src="https://picsum.photos/id/201/600/700" class="w-full aspect-[4/3.2] object-cover group-hover:scale-105 transition-transform" alt="Versace Skunk"><div class="absolute top-4 right-4 text-xs px-3 py-1 bg-black/70 rounded-2xl">LUXE</div></div>
-      <div class="p-5"><div class="font-bold text-xl">VERSACE SKUNK</div><div class="text-xs text-zinc-400">Gold Medusa</div><div class="mt-1 text-3xl font-black">$178</div><button onclick="addToCart(this,'Versace Skunk',178)" class="mt-4 w-full py-3.5 text-xs font-extrabold tracking-widest bg-white text-black rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button></div>
-    </div>
-
-    <div class="group bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800 card-hover" data-category="animal">
-      <div class="relative"><img src="https://picsum.photos/id/251/600/700" class="w-full aspect-[4/3.2] object-cover group-hover:scale-105 transition-transform" alt="Tiger King"><div class="absolute top-4 right-4 text-xs px-3 py-1 bg-yellow-500 text-black rounded-2xl font-bold">KING</div></div>
-      <div class="p-5"><div class="font-bold text-xl">TIGER KING</div><div class="text-xs text-zinc-400">Crown Roar</div><div class="mt-1 text-3xl font-black">$155</div><button onclick="addToCart(this,'Tiger King',155)" class="mt-4 w-full py-3.5 text-xs font-extrabold tracking-widest bg-white text-black rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button></div>
-    </div>
-  </div>
-
-  <p class="text-center text-xs text-zinc-500 mt-10">Upload your actual product photos to the repo’s /images folder and update the src paths. More colorways dropping weekly.</p>
-</section>
-
-<!-- Music Section -->
-<section id="music" class="bg-zinc-950 py-16 border-t border-zinc-800">
-  <div class="max-w-5xl mx-auto px-6">
-    <div class="text-center mb-10">
-      <span class="text-red-600 text-xs tracking-[3px]">THE SOUNDTRACK</span>
-      <h2 class="text-5xl font-black tracking-tight">MUSIC</h2>
-    </div>
-    <div class="grid md:grid-cols-2 gap-6">
-      <div class="bg-zinc-900 p-8 rounded-3xl">
-        <div class="font-bold mb-3">LATEST: LATE NIGHT</div>
-        <div class="text-sm text-zinc-400 mb-6">Stream the new Skunk Lord single now on all platforms.</div>
-        <div class="flex gap-3">
-          <a href="#" class="flex-1 text-center py-3 text-xs font-bold border border-white/30 rounded-2xl hover:bg-white hover:text-black">SPOTIFY</a>
-          <a href="#" class="flex-1 text-center py-3 text-xs font-bold border border-white/30 rounded-2xl hover:bg-white hover:text-black">APPLE</a>
-          <a href="#" class="flex-1 text-center py-3 text-xs font-bold border border-white/30 rounded-2xl hover:bg-white hover:text-black">YOUTUBE</a>
-        </div>
-      </div>
-      <div class="bg-zinc-900 p-8 rounded-3xl flex flex-col justify-center">
-        <div class="text-sm">X Subscribers get early access to unreleased beats + exclusive visualizers.</div>
-        <a href="https://x.com/SkunkLord" class="mt-4 inline-block text-red-500 font-bold text-sm">SUBSCRIBE ON X →</a>
+    <!-- Add more cards the same way -->
+    <div class="bg-zinc-900 rounded-3xl overflow-hidden border border-zinc-800" data-category="classic">
+      <img src="https://picsum.photos/id/160/600/650" class="w-full" alt="Classic Navy. REPLACE WITH your image">
+      <div class="p-5">
+        <div class="font-bold text-2xl">CLASSIC NAVY</div>
+        <div class="text-xs text-zinc-400">Signature Stripe</div>
+        <div class="text-3xl font-black mt-1">$128</div>
+        <button onclick="addToCart(this,'Classic Navy',128)" class="mt-4 w-full py-3.5 bg-white text-black text-xs font-extrabold tracking-widest rounded-3xl hover:bg-red-600 hover:text-white transition">ADD TO CART</button>
       </div>
     </div>
+
   </div>
+
+  <p class="text-center text-xs mt-10 text-zinc-500">Upload your photos to the <strong>images</strong> folder then replace the src paths above. I can do it for you — just tell me the filenames.</p>
 </section>
 
-<!-- Art Section -->
-<section id="art" class="max-w-6xl mx-auto px-6 py-16">
-  <div class="text-center mb-10">
-    <span class="text-red-600 text-xs tracking-[3px]">VISUALS</span>
-    <h2 class="text-5xl font-black tracking-tight">ART</h2>
-  </div>
-  <div class="text-center text-zinc-400 max-w-md mx-auto">
-    Graffiti murals, album covers, and limited edition prints coming soon.<br>
-    Follow on X for first looks.
-  </div>
+<!-- Music -->
+<section id="music" class="max-w-5xl mx-auto px-6 py-12 border-t border-zinc-800">
+  <h2 class="text-5xl font-black mb-6">MUSIC</h2>
+  <p class="text-zinc-400">Latest drops + links coming soon. X subs get early access.</p>
 </section>
-
-<footer class="bg-black py-10 text-center text-xs text-zinc-500 border-t border-zinc-900">
-  © OFF NECK LEVEL by SKUNK LORD — Built for the streets.<br>
-  <span class="text-[10px]">GitHub Pages • Replace images in repo for production</span>
-</footer>
 
 <script>
-function filterCategory(cat) {
-  const cards = document.querySelectorAll('#merch-grid > div');
-  const buttons = document.querySelectorAll('#filters button');
-  buttons.forEach(b => b.classList.remove('active', 'bg-red-600', 'text-white'));
-  
-  const active = Array.from(buttons).find(b => b.dataset.filter === cat);
-  if (active) active.classList.add('active', 'bg-red-600', 'text-white');
-  
-  cards.forEach(card => {
-    if (cat === 'all') {
-      card.style.display = 'block';
-    } else {
-      card.style.display = card.dataset.category.includes(cat) ? 'block' : 'none';
-    }
+function filterMerch(cat) {
+  document.querySelectorAll('#grid > div').forEach(el => {
+    el.style.display = (cat === 'all' || el.dataset.category.includes(cat)) ? '' : 'none';
   });
 }
 
 function addToCart(btn, name, price) {
-  const original = btn.innerHTML;
+  const old = btn.innerHTML;
   btn.innerHTML = 'ADDED ✓';
-  btn.style.backgroundColor = '#16a34a';
-  btn.style.color = 'white';
-  
+  btn.style.background = '#16a34a';
   const toast = document.createElement('div');
-  toast.style.cssText = 'position:fixed;bottom:24px;right:24px;background:#18181b;border:1px solid #3f3f46;padding:14px 22px;border-radius:9999px;display:flex;align-items:center;gap:10px;z-index:9999';
-  toast.innerHTML = `<i class="fas fa-check-circle text-emerald-400"></i> <span class="text-sm">${name} • $${price} added</span>`;
+  toast.style.cssText = 'position:fixed;bottom:20px;right:20px;background:#27272a;padding:12px 20px;border-radius:9999px';
+  toast.innerHTML = `${name} added • $${price}`;
   document.body.appendChild(toast);
-  
-  setTimeout(() => {
-    btn.innerHTML = original;
-    btn.style.backgroundColor = '';
-    btn.style.color = '';
-    toast.style.transition = 'all .25s';
-    toast.style.opacity = '0';
-    setTimeout(() => toast.parentNode.removeChild(toast), 200);
-  }, 1500);
+  setTimeout(() => { btn.innerHTML = old; btn.style.background=''; toast.remove(); }, 1400);
 }
-
-// Set initial active filter
-window.onload = function() {
-  const allBtn = document.querySelector('#filters button[data-filter="all"]');
-  if (allBtn) allBtn.classList.add('active', 'bg-red-600', 'text-white');
-};
 </script>
 </body>
 </html>
